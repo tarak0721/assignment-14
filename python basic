@@ -1,0 +1,21 @@
+1. What does RGBA stand for?
+Red-Green-Blue-Alpha
+2. From the Pillow module, how do you get the RGBA value of any images?
+ import the Image module from the Pillow library. from PIL import Image.
+Open any image and get the RAGBAG values. img = Image.open('image.png') .
+Change the color. Data will be an Imaging Core object containing thousands of tuples of RGBA values.
+Store the changed image.
+
+3. What is a box tuple, and how does it work?
+ Many of Pillow's functions and methods take a box tuple argument. This means Pillow is expecting a tuple of four integer coordinates that represent a rectangular region in an image.
+4. Use your image and load in notebook then, How can you find out the width and height of an Image object?
+ PIL.Image.open() is used to open the image and then .width and .height property of Image are used to get the height and width of the image. The same results can be obtained by using .size property.
+5. What method would you call to get Image object for a 100×100 image, excluding the lower-left quarter of it?
+ To load an image from a file, we use the open() function in the Image module, passing it the path to the image.
+to resize an image, you call the resize() method on it, passing in a two-integer tuple argument representing the width and height of the resized image(which is 100,100)
+6. After making changes to an Image object, how could you save it as an image file?
+ To save images, we can use the PIL. save() function. This function is used to export an image to an external file. But to use this function, first, we should have an object which contains an image.
+7. What module contains Pillow’s shape-drawing code?
+ ImageDraw module
+8. Image objects do not have drawing methods. What kind of object does? How do you get this kind of object?
+ wand.drawing- This module provides us with some very basic drawing functions. wand.drawing.Drawing object buffers instructions for drawing shapes into images, and then it can draw these shapes into zero or more images.
